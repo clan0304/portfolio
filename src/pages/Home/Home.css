@@ -49,12 +49,27 @@
 }
 
 .skills h1 {
-  color: #3e497a;
+  color: black;
 }
 
 .skills .list {
   list-style: none;
   width: 60%;
+}
+
+.skills .list .item {
+  margin-bottom: 20px;
+}
+
+.skills .list button {
+  background-color: #21325e;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.skills .list button:hover {
+  opacity: 0.7;
 }
 
 .list span {
@@ -82,4 +97,25 @@
   .skills h2 {
     font-size: 30px;
   }
+}
+
+.aboutme {
+  background-color: #21325e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutme h1 {
+  font-size: 60px;
+}
+
+.aboutme_listcontainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
 }

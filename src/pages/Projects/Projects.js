@@ -1,5 +1,5 @@
-import { IconButton, Box, Button, useMediaQuery } from '@mui/material';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import { Box, Button, useMediaQuery } from '@mui/material';
+
 import Url from '../../components/url';
 
 const Projects = () => {
@@ -15,7 +15,7 @@ const Projects = () => {
       backgroundColor="#f0f0f0"
     >
       <Box
-        width="80%"
+        width="90%"
         display="flex"
         flexDirection={isNonMobileScreen ? 'row' : 'column'}
         justifyContent="space-around"
@@ -24,16 +24,44 @@ const Projects = () => {
         rowGap="50px"
       >
         {urlArray.map((url) => (
-          <Box width="100%" textAlign="center" maxWidth="350px">
-            <img src={url.image} alt="Cake shop" width="350px" height="350px" />
-            <h1>{url.name}</h1>
-            <p>{url.description}</p>
+          <Box
+            width="100%"
+            minHeight="600px"
+            border="1px solid"
+            textAlign="center"
+            maxWidth="300px"
+          >
+            <img src={url.image} alt="Cake shop" width="300px" height="350px" />
+            <Box
+              height="200px"
+              display="flex"
+              flexDirection="column"
+              justifyContent="center"
+            >
+              <Box
+                height="100px"
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+              >
+                <h1>{url.name}</h1>
+              </Box>
+              <Box height="100px" padding="0 3px">
+                <p>{url.description}</p>
+              </Box>
+            </Box>
 
             <Box width="100%" display="flex" justifyContent="space-around">
               <a href={url.github}>
-                <IconButton>
-                  <GitHubIcon />
-                </IconButton>
+                <Button
+                  sx={{
+                    color: '#21325e',
+                    backgroundColor: 'white',
+                  }}
+                  variant="contained"
+                >
+                  GitHub
+                </Button>
               </a>
               <a href={url.website}>
                 <Button
