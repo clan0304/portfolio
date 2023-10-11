@@ -1,5 +1,6 @@
 import Cakeapp from '../assets/Cakeapp.png';
 import DanceStudio from '../assets/dancestudio.png';
+import CafeBlog from '../assets/CafeBlog.png';
 
 const Url = () => {
   const url = [
@@ -20,6 +21,14 @@ const Url = () => {
       image: DanceStudio,
       github: 'https://github.com/clan0304/dancestudiowebsite',
       website: 'https://clinquant-tapioca-b06ac0.netlify.app/',
+    },
+    {
+      id: 3,
+      name: 'Cafe Blog',
+      description: 'TypeScript, Next.js 13, prisma, tailwind CSS',
+      image: CafeBlog,
+      github: 'https://github.com/clan0304/blogapp',
+      website: 'https://blogapp-iota-inky.vercel.app/',
     },
   ];
   return url;
