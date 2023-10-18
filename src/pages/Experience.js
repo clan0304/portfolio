@@ -20,6 +20,7 @@ const Experience = () => {
           <h3 className="vertical-timeline-element-title">VET Resources</h3>
           <p>Web developer(Intern)</p>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--sideproject"
           date="2023"
@@ -27,20 +28,9 @@ const Experience = () => {
           icon={<WebIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            E-Commerce Website(Cake shop)
+            Freelance developer
           </h3>
-          <p>Side Project(MERN Stack)</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--sideproject"
-          date="2023"
-          iconStyle={{ background: '#3e497a', color: '#fff' }}
-          icon={<WebIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Website for Dance Academy
-          </h3>
-          <p>Side Project(MERN Stack)</p>
+          <p>Developing a web service with a variety of technology stacks.</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
