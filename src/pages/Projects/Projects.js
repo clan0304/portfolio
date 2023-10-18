@@ -27,11 +27,18 @@ const Projects = () => {
           <Box
             width="100%"
             minHeight="600px"
-            border="1px solid"
+            backgroundColor="white"
+            borderRadius="10px"
             textAlign="center"
             maxWidth="300px"
           >
-            <img src={url.image} alt="Cake shop" width="300px" height="350px" />
+            <img
+              src={url.image}
+              alt="Cake shop"
+              width="300px"
+              height="350px"
+              borderRadius="10px"
+            />
             <Box
               height="200px"
               display="flex"
