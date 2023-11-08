@@ -16,7 +16,7 @@ const Home = () => {
         <h2> Hi, My Name is Sang mo</h2>
         <div className="prompt">
           <p>
-            A software/Web developer with a passion for learning and creating.
+            A Software/Web developer with a passion for learning and creating.
           </p>
           <a href="https://www.linkedin.com/in/sang-mo-chun-b753b1247/">
             <IconButton>
@@ -32,8 +32,8 @@ const Home = () => {
           <li className="item">
             <h2> Front-End</h2>
             <span>
-              ReactJS, Next.js 13, Redux, HTML, CSS, React Native, NPM,
-              BootStrap, MaterialUI, TailwindCSS, TypeScript
+              ReactJS, Next.js 13, Redux, HTML, CSS, BootStrap, MaterialUI,
+              TailwindCSS, TypeScript
             </span>
           </li>
           <li className="item">
@@ -44,15 +44,14 @@ const Home = () => {
             <h2>Languages</h2>
             <span>JavaScript, Python, Java</span>
           </li>
-         
-            <button
-              onClick={() => {
-                navigate('/projects');
-              }}
-            >
-              See my Projects!
-            </button>
-          
+
+          <button
+            onClick={() => {
+              navigate('/projects');
+            }}
+          >
+            See my Projects!
+          </button>
         </ol>
       </div>
       <div className="aboutme">

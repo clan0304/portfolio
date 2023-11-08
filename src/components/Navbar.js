@@ -92,7 +92,10 @@ const Navbar = () => {
               <Typography
                 fontSize="15px"
                 color="black"
-                onClick={() => navigate('/projects')}
+                onClick={() => {
+                  navigate('/projects');
+                  setIsMobileMenuToggled(!isMobileMenuToggled);
+                }}
                 sx={{
                   '&:hover': {
                     cursor: 'pointer',
@@ -104,7 +107,10 @@ const Navbar = () => {
               <Typography
                 fontSize="15px"
                 color="black"
-                onClick={() => navigate('/experience')}
+                onClick={() => {
+                  navigate('/experience');
+                  setIsMobileMenuToggled(!isMobileMenuToggled);
+                }}
                 sx={{
                   '&:hover': {
                     cursor: 'pointer',

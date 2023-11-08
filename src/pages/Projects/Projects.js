@@ -4,7 +4,7 @@ import Url from '../../components/url';
 
 const Projects = () => {
   const urlArray = Url();
-  const isNonMobileScreen = useMediaQuery('(min-width:900px)');
+  const isNonMobileScreen = useMediaQuery('(min-width:1000px)');
   return (
     <Box
       width="100%"
@@ -25,18 +25,17 @@ const Projects = () => {
       >
         {urlArray.map((url) => (
           <Box
-            width="100%"
-            minHeight="600px"
+            minHeight="550px"
             backgroundColor="white"
             borderRadius="10px"
             textAlign="center"
-            maxWidth="300px"
+            width="300px"
           >
             <img
               src={url.image}
               alt="Cake shop"
               width="300px"
-              height="350px"
+              height="300px"
               borderRadius="10px"
             />
             <Box
@@ -51,7 +50,7 @@ const Projects = () => {
                 flexDirection="column"
                 justifyContent="center"
               >
-                <h1>{url.name}</h1>
+                <h2>{url.name}</h2>
               </Box>
               <Box height="100px" padding="0 3px">
                 <p>{url.description}</p>
