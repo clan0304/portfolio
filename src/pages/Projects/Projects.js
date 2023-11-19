@@ -13,6 +13,9 @@ const Projects = () => {
       justifyContent="center"
       padding="20px 0"
       backgroundColor="#f0f0f0"
+      sx={{
+        paddingTop: '100px',
+      }}
     >
       <Box
         width="90%"

@@ -1,5 +1,6 @@
 import React from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { IconButton } from '@mui/material';
 import Barista from '../../assets/barista.jpg';
 import Climbing from '../../assets/climbing.jpg';
@@ -21,6 +22,11 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/sang-mo-chun-b753b1247/">
             <IconButton>
               <LinkedInIcon />
+            </IconButton>
+          </a>
+          <a href="https://github.com/clan0304">
+            <IconButton>
+              <GitHubIcon />
             </IconButton>
           </a>
         </div>

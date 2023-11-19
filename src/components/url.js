@@ -12,6 +12,10 @@ const Url = () => {
       image: Cakeapp,
       github: 'https://github.com/clan0304/cakeshopecommerce',
       website: 'https://zingy-profiterole-67a527.netlify.app/',
+      characteristics: [
+        'Stripe API is integrated with website for payment.',
+        'Login/Resiter Page with JWT, bcrypt',
+      ],
     },
     {
       id: 2,
